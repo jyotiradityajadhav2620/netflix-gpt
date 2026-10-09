@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##
+- create react app
+-config tailwinf and mui
+-Header
+-Routing
+-Login form
+-sign up form
+-form validation
+-useRef hook
+-Firebase setup
+-Deploying our app to prod
+-Create signup user account
+
+--Gug fixed- bug fix of sign up and profile picture update 
+--bug fixed-If user not login /browser to login page vice a versa
+- we have unsubscribed on Authchange call back 
 ## Available Scripts
 
 In the project directory, you can run:
