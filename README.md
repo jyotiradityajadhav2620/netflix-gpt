@@ -18,6 +18,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 --Gug fixed- bug fix of sign up and profile picture update 
 --bug fixed-If user not login /browser to login page vice a versa
 - we have unsubscribed on Authchange call back 
+
+
+
+
+
+
+--GPT search feature
+
+
+
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -3,18 +3,26 @@ import Header from "./Header";
 import { API_CONSTANTS } from "../Utils/constants";
 import { log } from "firebase/firestore/pipelines";
 import { addNowPlayingMovies } from "../Utils/moviesSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import MainContainer from "./MainContainer";
 import SecondaryContainer from "./SecondaryContainer";
+import GptSearch from "./GptSearch";
 
 const Browse = () => {
-  useNowPlayingMovies( );
+  const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
+  useNowPlayingMovies();
   return (
-    <div> 
+    <div>
       <Header />
-      <MainContainer/>
-      <SecondaryContainer/>
+      {showGptSearch ? (
+        <GptSearch />
+      ) : (
+        <>
+          <MainContainer />
+          <SecondaryContainer />
+        </>
+      )}
     </div>
   );
 };
